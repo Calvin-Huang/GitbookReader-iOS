@@ -25,7 +25,7 @@ class BooksViewController: UIViewController {
     
 
     // MARK: - Private Methods
-    private func configureNavigationBar() {
+    fileprivate func configureNavigationBar() {
         
     }
 }
