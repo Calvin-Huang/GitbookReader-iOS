@@ -8,6 +8,7 @@ target 'GitbookReader' do
   pod 'DynamicColor', '~> 3.0'
   pod 'SnapKit', '~> 3.0'
   pod 'ObjectMapper', '~> 2.0'
+  pod 'RealmSwift'
 
   # Beta dependencies for Swift 3.0
   pod 'Moya-ObjectMapper/RxSwift', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
