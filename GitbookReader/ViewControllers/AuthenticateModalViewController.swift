@@ -26,17 +26,22 @@ class AuthenticateModalViewController: UIViewController, Modal {
     }
     @IBOutlet var cancelButton: UIButton!
 
-    var confirmed: (() -> Void)?
+    var confirmed: ((AnyObject?) -> Void)?
     var canceled: (() -> Void)?
     
     private let disposeBag = DisposeBag()
     private let modalTransition = ModalTransition()
     
+    private let userViewModel = UserViewModel.sharedInstance
+    
     // MARK: Initializers
-    convenience init() {
+    convenience init(confirmed: ((AnyObject?) -> Void)? = nil, canceled: (() -> Void)? = nil) {
         self.init(nibName: nil, bundle: nil)
         
         setUpDefaultValues()
+        
+        self.confirmed = confirmed
+        self.canceled = canceled
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -70,7 +75,8 @@ class AuthenticateModalViewController: UIViewController, Modal {
         
         confirmButton.rx.tap
             .subscribe(onNext: { [weak self] in
-                self?.confirmed?()
+                self?.userViewModel.authenticateGitBook()
+                self?.confirmed?(self)
             })
             .addDisposableTo(disposeBag)
     }

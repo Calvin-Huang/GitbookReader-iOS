@@ -9,6 +9,6 @@
 import Foundation
 
 protocol Confirmable {
-    var confirmed: (() -> Void)? { get set }
+    var confirmed: ((AnyObject?) -> Void)? { get set }
     var canceled: (() -> Void)? { get set }
 }
