@@ -17,12 +17,19 @@ target 'GitbookReader' do
   pod 'RxCocoa',    '~> 3.0.0-beta.2'
   # pod 'Moya/RxSwift'
 
+  def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+  end
+
   target 'GitbookReaderTests' do
     inherit! :search_paths
+    testing_pods
   end
 
   target 'GitbookReaderUITests' do
     inherit! :search_paths
+    testing_pods
   end
 end
 
