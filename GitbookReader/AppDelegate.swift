@@ -61,11 +61,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func getValidatedURLComponent(URL url: URL) -> URLComponents? {
         guard
-            let associatedDomain = (Bundle.main.object(forInfoDictionaryKey: "Associated Domain") as AnyObject?)?["Production"] as? String,
-            let allowedPath = Bundle.main.object(forInfoDictionaryKey: "Allowed Paths") as? [String],
             let components = URLComponents(url: url, resolvingAgainstBaseURL: true),
-            "\(components.scheme!)://\(components.host!)" == associatedDomain,
-            allowedPath.contains(components.path)
+            "\(components.scheme!)://\(components.host!)" == Application.AssociatedDomain.production.value,
+            Application.isAllowed(path: components.path)
         else {
             return nil
         }
