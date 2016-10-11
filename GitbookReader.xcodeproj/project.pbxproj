@@ -10,12 +10,20 @@
 		08257F275C5FFD4C425FCF07 /* Pods_GitbookReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F7DC01EB073FBD8CE7EDF9 /* Pods_GitbookReaderUITests.framework */; };
 		18542BB41DA938EC00FC2420 /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18542BB31DA938EB00FC2420 /* BooksViewModel.swift */; };
 		18542BB81DA93B1D00FC2420 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18542BB71DA93B1D00FC2420 /* Book.swift */; };
-		18542BBA1DA93FCD00FC2420 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18542BB91DA93FCD00FC2420 /* BookContent.swift */; };
 		185707421D163D43007AF52B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185707411D163D43007AF52B /* AppDelegate.swift */; };
 		185707491D163D43007AF52B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185707481D163D43007AF52B /* Assets.xcassets */; };
 		1857074C1D163D43007AF52B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857074A1D163D43007AF52B /* LaunchScreen.storyboard */; };
 		185707571D163D44007AF52B /* GitbookReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185707561D163D44007AF52B /* GitbookReaderTests.swift */; };
 		185707621D163D44007AF52B /* GitbookReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185707611D163D44007AF52B /* GitbookReaderUITests.swift */; };
+		187921521DABCB7C00EDE2B0 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187921511DABCB7B00EDE2B0 /* UISearchBar.swift */; };
+		187921551DABDD0600EDE2B0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187921541DABDD0600EDE2B0 /* UserViewModel.swift */; };
+		187921591DABDD6800EDE2B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187921581DABDD6800EDE2B0 /* User.swift */; };
+		1879215B1DABDD8E00EDE2B0 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1879215A1DABDD8E00EDE2B0 /* BookContent.swift */; };
+		18B72F591DAC897D000D6E15 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B72F581DAC897D000D6E15 /* Modal.swift */; };
+		18CF87DE1DABED1300701CAD /* AuthenticateModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF87DD1DABED1300701CAD /* AuthenticateModalViewController.swift */; };
+		18CF87E01DABED3400701CAD /* AuthenticateModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF87DF1DABED3400701CAD /* AuthenticateModalViewController.xib */; };
+		18D617A01DAC14FE000EDA11 /* Confirmable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6179F1DAC14FE000EDA11 /* Confirmable.swift */; };
+		18D617A21DAC166B000EDA11 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D617A11DAC166B000EDA11 /* ModalTransition.swift */; };
 		18DA4EE51DA8E198002CBB0F /* AddBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DA4EE31DA8E198002CBB0F /* AddBookViewController.xib */; };
 		18DA4EE61DA8E198002CBB0F /* BooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DA4EE41DA8E198002CBB0F /* BooksViewController.xib */; };
 		18DA4EE91DA8E1A5002CBB0F /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA4EE71DA8E1A5002CBB0F /* AddBookViewController.swift */; };
@@ -45,7 +53,6 @@
 		184D69501DAB6DCC0071204C /* GitbookReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitbookReader.entitlements; sourceTree = "<group>"; };
 		18542BB31DA938EB00FC2420 /* BooksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BooksViewModel.swift; path = ViewModels/BooksViewModel.swift; sourceTree = "<group>"; };
 		18542BB71DA93B1D00FC2420 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = Models/Book.swift; sourceTree = "<group>"; };
-		18542BB91DA93FCD00FC2420 /* BookContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
 		1857073E1D163D43007AF52B /* GitbookReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitbookReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185707411D163D43007AF52B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185707481D163D43007AF52B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +64,15 @@
 		1857075D1D163D44007AF52B /* GitbookReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitbookReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		185707611D163D44007AF52B /* GitbookReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitbookReaderUITests.swift; sourceTree = "<group>"; };
 		185707631D163D44007AF52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187921511DABCB7B00EDE2B0 /* UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UISearchBar.swift; path = Extensions/UISearchBar.swift; sourceTree = "<group>"; };
+		187921541DABDD0600EDE2B0 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserViewModel.swift; path = ViewModels/UserViewModel.swift; sourceTree = "<group>"; };
+		187921581DABDD6800EDE2B0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		1879215A1DABDD8E00EDE2B0 /* BookContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookContent.swift; path = Models/BookContent.swift; sourceTree = "<group>"; };
+		18B72F581DAC897D000D6E15 /* Modal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Modal.swift; path = Protocols/Modal.swift; sourceTree = "<group>"; };
+		18CF87DD1DABED1300701CAD /* AuthenticateModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticateModalViewController.swift; path = ViewControllers/AuthenticateModalViewController.swift; sourceTree = "<group>"; };
+		18CF87DF1DABED3400701CAD /* AuthenticateModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuthenticateModalViewController.xib; path = Views/ViewControllers/AuthenticateModalViewController.xib; sourceTree = "<group>"; };
+		18D6179F1DAC14FE000EDA11 /* Confirmable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Confirmable.swift; path = Protocols/Confirmable.swift; sourceTree = "<group>"; };
+		18D617A11DAC166B000EDA11 /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalTransition.swift; path = Views/ModalTransition.swift; sourceTree = "<group>"; };
 		18DA4EE31DA8E198002CBB0F /* AddBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddBookViewController.xib; path = Views/ViewControllers/AddBookViewController.xib; sourceTree = "<group>"; };
 		18DA4EE41DA8E198002CBB0F /* BooksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BooksViewController.xib; path = Views/ViewControllers/BooksViewController.xib; sourceTree = "<group>"; };
 		18DA4EE71DA8E1A5002CBB0F /* AddBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddBookViewController.swift; path = ViewControllers/AddBookViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +144,7 @@
 				184D69501DAB6DCC0071204C /* GitbookReader.entitlements */,
 				18DCACBA1D16F61600933983 /* Config */,
 				18DCACB91D16F60400933983 /* Extensions */,
+				18D6179E1DAC1466000EDA11 /* Protocols */,
 				18DCACB81D16F5FE00933983 /* Services */,
 				18DCACB71D16F5F600933983 /* Models */,
 				18DCACB61D16F5EA00933983 /* ViewControllers */,
@@ -159,11 +176,20 @@
 			path = GitbookReaderUITests;
 			sourceTree = "<group>";
 		};
+		18D6179E1DAC1466000EDA11 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				18D6179F1DAC14FE000EDA11 /* Confirmable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		18DA4EDC1DA8D9A2002CBB0F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				18DA4EE31DA8E198002CBB0F /* AddBookViewController.xib */,
 				18DA4EE41DA8E198002CBB0F /* BooksViewController.xib */,
+				18CF87DF1DABED3400701CAD /* AuthenticateModalViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -172,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				18542BB31DA938EB00FC2420 /* BooksViewModel.swift */,
+				187921541DABDD0600EDE2B0 /* UserViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -180,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				18DA4EDC1DA8D9A2002CBB0F /* ViewControllers */,
+				18D617A11DAC166B000EDA11 /* ModalTransition.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -189,6 +217,8 @@
 			children = (
 				18DA4EE71DA8E1A5002CBB0F /* AddBookViewController.swift */,
 				18DA4EE81DA8E1A5002CBB0F /* BooksViewController.swift */,
+				18CF87DD1DABED1300701CAD /* AuthenticateModalViewController.swift */,
+				18B72F581DAC897D000D6E15 /* Modal.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -196,8 +226,9 @@
 		18DCACB71D16F5F600933983 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1879215A1DABDD8E00EDE2B0 /* BookContent.swift */,
 				18542BB71DA93B1D00FC2420 /* Book.swift */,
-				18542BB91DA93FCD00FC2420 /* BookContent.swift */,
+				187921581DABDD6800EDE2B0 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -212,6 +243,7 @@
 		18DCACB91D16F60400933983 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				187921511DABCB7B00EDE2B0 /* UISearchBar.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -372,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1857074C1D163D43007AF52B /* LaunchScreen.storyboard in Resources */,
+				18CF87E01DABED3400701CAD /* AuthenticateModalViewController.xib in Resources */,
 				18DA4EE61DA8E198002CBB0F /* BooksViewController.xib in Resources */,
 				18DA4EE51DA8E198002CBB0F /* AddBookViewController.xib in Resources */,
 				185707491D163D43007AF52B /* Assets.xcassets in Resources */,
@@ -537,12 +570,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D617A21DAC166B000EDA11 /* ModalTransition.swift in Sources */,
+				18D617A01DAC14FE000EDA11 /* Confirmable.swift in Sources */,
 				185707421D163D43007AF52B /* AppDelegate.swift in Sources */,
+				187921551DABDD0600EDE2B0 /* UserViewModel.swift in Sources */,
 				18542BB41DA938EC00FC2420 /* BooksViewModel.swift in Sources */,
 				18DA4EE91DA8E1A5002CBB0F /* AddBookViewController.swift in Sources */,
+				1879215B1DABDD8E00EDE2B0 /* BookContent.swift in Sources */,
 				18542BB81DA93B1D00FC2420 /* Book.swift in Sources */,
-				18542BBA1DA93FCD00FC2420 /* BookContent.swift in Sources */,
+				187921591DABDD6800EDE2B0 /* User.swift in Sources */,
+				187921521DABCB7C00EDE2B0 /* UISearchBar.swift in Sources */,
 				18DA4EEA1DA8E1A5002CBB0F /* BooksViewController.swift in Sources */,
+				18CF87DE1DABED1300701CAD /* AuthenticateModalViewController.swift in Sources */,
+				18B72F591DAC897D000D6E15 /* Modal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
