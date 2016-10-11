@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		08257F275C5FFD4C425FCF07 /* Pods_GitbookReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F7DC01EB073FBD8CE7EDF9 /* Pods_GitbookReaderUITests.framework */; };
+		180237B31DAD122B00006BAB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180237B21DAD122B00006BAB /* API.swift */; };
+		180237B71DAD144E00006BAB /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180237B61DAD144E00006BAB /* Bootstrap.swift */; };
+		1827A2B71DAD1ECF007461E4 /* BootstrapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827A2B61DAD1ECF007461E4 /* BootstrapSpec.swift */; };
 		18542BB41DA938EC00FC2420 /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18542BB31DA938EB00FC2420 /* BooksViewModel.swift */; };
 		18542BB81DA93B1D00FC2420 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18542BB71DA93B1D00FC2420 /* Book.swift */; };
 		185707421D163D43007AF52B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185707411D163D43007AF52B /* AppDelegate.swift */; };
 		185707491D163D43007AF52B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185707481D163D43007AF52B /* Assets.xcassets */; };
 		1857074C1D163D43007AF52B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857074A1D163D43007AF52B /* LaunchScreen.storyboard */; };
-		185707571D163D44007AF52B /* GitbookReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185707561D163D44007AF52B /* GitbookReaderTests.swift */; };
 		185707621D163D44007AF52B /* GitbookReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185707611D163D44007AF52B /* GitbookReaderUITests.swift */; };
 		187921521DABCB7C00EDE2B0 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187921511DABCB7B00EDE2B0 /* UISearchBar.swift */; };
 		187921551DABDD0600EDE2B0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187921541DABDD0600EDE2B0 /* UserViewModel.swift */; };
@@ -50,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180237B21DAD122B00006BAB /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Services/API.swift; sourceTree = "<group>"; };
+		180237B61DAD144E00006BAB /* Bootstrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
+		1827A2B61DAD1ECF007461E4 /* BootstrapSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BootstrapSpec.swift; sourceTree = "<group>"; };
 		184D69501DAB6DCC0071204C /* GitbookReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitbookReader.entitlements; sourceTree = "<group>"; };
 		18542BB31DA938EB00FC2420 /* BooksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BooksViewModel.swift; path = ViewModels/BooksViewModel.swift; sourceTree = "<group>"; };
 		18542BB71DA93B1D00FC2420 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = Models/Book.swift; sourceTree = "<group>"; };
@@ -59,7 +64,6 @@
 		1857074B1D163D43007AF52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1857074D1D163D43007AF52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185707521D163D44007AF52B /* GitbookReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitbookReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		185707561D163D44007AF52B /* GitbookReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitbookReaderTests.swift; sourceTree = "<group>"; };
 		185707581D163D44007AF52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1857075D1D163D44007AF52B /* GitbookReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitbookReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		185707611D163D44007AF52B /* GitbookReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitbookReaderUITests.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 				18DCACB51D16F5E300933983 /* Views */,
 				18DCACB41D16F5DC00933983 /* ViewModels */,
 				185707411D163D43007AF52B /* AppDelegate.swift */,
+				180237B61DAD144E00006BAB /* Bootstrap.swift */,
 				185707481D163D43007AF52B /* Assets.xcassets */,
 				1857074A1D163D43007AF52B /* LaunchScreen.storyboard */,
 				1857074D1D163D43007AF52B /* Info.plist */,
@@ -161,8 +166,8 @@
 		185707551D163D44007AF52B /* GitbookReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				185707561D163D44007AF52B /* GitbookReaderTests.swift */,
 				185707581D163D44007AF52B /* Info.plist */,
+				1827A2B61DAD1ECF007461E4 /* BootstrapSpec.swift */,
 			);
 			path = GitbookReaderTests;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 		18DCACB81D16F5FE00933983 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				180237B21DAD122B00006BAB /* API.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -576,6 +582,7 @@
 				187921551DABDD0600EDE2B0 /* UserViewModel.swift in Sources */,
 				18542BB41DA938EC00FC2420 /* BooksViewModel.swift in Sources */,
 				18DA4EE91DA8E1A5002CBB0F /* AddBookViewController.swift in Sources */,
+				180237B31DAD122B00006BAB /* API.swift in Sources */,
 				1879215B1DABDD8E00EDE2B0 /* BookContent.swift in Sources */,
 				18542BB81DA93B1D00FC2420 /* Book.swift in Sources */,
 				187921591DABDD6800EDE2B0 /* User.swift in Sources */,
@@ -583,6 +590,7 @@
 				18DA4EEA1DA8E1A5002CBB0F /* BooksViewController.swift in Sources */,
 				18CF87DE1DABED1300701CAD /* AuthenticateModalViewController.swift in Sources */,
 				18B72F591DAC897D000D6E15 /* Modal.swift in Sources */,
+				180237B71DAD144E00006BAB /* Bootstrap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185707571D163D44007AF52B /* GitbookReaderTests.swift in Sources */,
+				1827A2B71DAD1ECF007461E4 /* BootstrapSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +735,7 @@
 				DEVELOPMENT_TEAM = ZT2WJ442QP;
 				INFOPLIST_FILE = GitbookReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = org.capslock.GitbookReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -756,6 +765,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GitbookReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.capslock.GitbookReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
