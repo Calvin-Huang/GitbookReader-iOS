@@ -7,13 +7,72 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import DynamicColor
 
-class AuthenticateModalViewController: UIViewController {
+class AuthenticateModalViewController: UIViewController, Modal {
+    @IBOutlet var container: UIView!
+    @IBOutlet var header: UIView!
+    @IBOutlet var body: UIView!
+    @IBOutlet var footer: UIView!
+    
+    @IBOutlet var dismissButton: UIButton!
+    @IBOutlet var confirmButton: UIButton! {
+        didSet {
+            confirmButton.layer.borderWidth = 1.0
+            confirmButton.layer.borderColor = confirmButton.titleColor(for: .normal)?.cgColor
+        }
+    }
+    @IBOutlet var cancelButton: UIButton!
 
+    var confirmed: (() -> Void)?
+    var canceled: (() -> Void)?
+    
+    private let disposeBag = DisposeBag()
+    private let modalTransition = ModalTransition()
+    
+    // MARK: Initializers
+    convenience init() {
+        self.init(nibName: nil, bundle: nil)
+        
+        setUpDefaultValues()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        setUpDefaultValues()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        setUpDefaultValues()
+    }
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        dismissButton.rx.tap
+            .subscribe(onNext: { [weak self] _ in
+                self?.dismiss(animated: true, completion: nil)
+                })
+            .addDisposableTo(disposeBag)
+        
+        cancelButton.rx.tap
+            .subscribe(onNext: { [weak self] _ in
+                self?.canceled?()
+                self?.dismiss(animated: true, completion: nil)
+            })
+            .addDisposableTo(disposeBag)
+        
+        confirmButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                self?.confirmed?()
+            })
+            .addDisposableTo(disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +80,9 @@ class AuthenticateModalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Private Methods
+    private func setUpDefaultValues() {
+        self.modalPresentationStyle = .custom
+        self.transitioningDelegate = modalTransition
     }
-    */
-
 }
