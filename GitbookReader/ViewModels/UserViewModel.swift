@@ -6,4 +6,8 @@
 //  Copyright © 2016 CapsLock. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+
+class UserViewModel {
+    let currentUser: Observable<User?> = Observable.just(nil)
+}

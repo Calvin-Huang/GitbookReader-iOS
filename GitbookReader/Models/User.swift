@@ -6,4 +6,15 @@
 //  Copyright © 2016 CapsLock. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
+import RealmSwift
+
+class User: Object, Mappable {
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        
+    }
+}
