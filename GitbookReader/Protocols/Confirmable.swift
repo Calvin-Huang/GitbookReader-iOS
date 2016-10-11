@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Modal {
+protocol Confirmable {
     var confirmed: (() -> Void)? { get set }
     var canceled: (() -> Void)? { get set }
 }
