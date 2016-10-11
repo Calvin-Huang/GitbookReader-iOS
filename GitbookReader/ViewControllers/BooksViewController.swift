@@ -22,6 +22,7 @@ class BooksViewController: UIViewController {
     }
     
     private let disposeBag = DisposeBag()
+    private let userViewModel = UserViewModel.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,19 @@ class BooksViewController: UIViewController {
         
         addBookButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
-                self?.present(AuthenticateModalViewController(), animated: true, completion: nil)
+                if let _ = self?.userViewModel.currentUser.value {
+                    self?.showAddBookActionSheet()
+                } else {
+                    let authenticateViewController = AuthenticateModalViewController(confirmed: {
+                        guard let viewController = $0 as? UIViewController else {
+                            return
+                        }
+                        
+                        viewController.dismiss(animated: false)
+                    })
+                    
+                    self?.present(authenticateViewController, animated: true, completion: nil)
+                }
             })
             .addDisposableTo(disposeBag)
         
@@ -53,8 +66,11 @@ class BooksViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func showAddBookActionSheet() {
+        
+    }
 
-    // MARK: - Private Methods
+    // MARK: Private Methods
     private func configureBooksTable() {
         
     }
