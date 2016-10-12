@@ -68,8 +68,13 @@ class AuthenticateModalViewController: UIViewController, Modal {
         
         cancelButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
-                self?.canceled?()
-                self?.dismiss(animated: true, completion: nil)
+                self?.dismiss(animated: true, completion: {
+                    
+                    // Make sure animate done.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.001) {
+                        self?.canceled?()
+                    }
+                })
             })
             .addDisposableTo(disposeBag)
         
