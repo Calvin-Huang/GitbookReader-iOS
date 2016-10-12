@@ -45,6 +45,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        if userActivity.activityType == NSUserActivityTypeBrowsingWeb {
+            let webpageURL = userActivity.webpageURL! // Always exists
+            if let components = getValidatedURLComponent(URL: webpageURL) {
+                
+                handleURLComponenst(components)
+                
+            } else {
+                UIApplication.shared.openURL(webpageURL)
+            }
+        }
+        return true
+    }
+    
+    private func getValidatedURLComponent(URL url: URL) -> URLComponents? {
+        guard
+            let components = URLComponents(url: url, resolvingAgainstBaseURL: true),
+            "\(components.scheme!)://\(components.host!)" == Application.AssociatedDomain.production.value,
+            Application.isAllowed(path: components.path)
+        else {
+            return nil
+        }
+        
+        return components
+    }
+    
+    private func handleURLComponenst(_ components: URLComponents) {
+        switch components.path {
+        case "/users":
+            guard
+                let queryItem = components.queryItems?.first,
+                queryItem.name == "token",
+                let token = queryItem.value,
+                let booksViewController = window?.rootViewController as? BooksViewController
+            else {
+                return
+            }
+            
+            UserViewModel.sharedInstance.token = token
+            
+            booksViewController.queuedAction?()
+        default:
+            break
+        }
+    }
 }
-
