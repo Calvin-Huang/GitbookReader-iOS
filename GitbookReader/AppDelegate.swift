@@ -83,9 +83,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return
             }
             
-            UserViewModel.sharedInstance.fetchUser(token: token)
+            UserViewModel.sharedInstance.token = token
             
-            booksViewController.showAddBookActionSheet()
+            booksViewController.queuedAction?()
         default:
             break
         }
