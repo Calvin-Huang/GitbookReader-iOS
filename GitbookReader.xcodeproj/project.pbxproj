@@ -22,6 +22,13 @@
 		187921591DABDD6800EDE2B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187921581DABDD6800EDE2B0 /* User.swift */; };
 		1879215B1DABDD8E00EDE2B0 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1879215A1DABDD8E00EDE2B0 /* BookContent.swift */; };
 		18B72F591DAC897D000D6E15 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B72F581DAC897D000D6E15 /* Modal.swift */; };
+		18C1889A1DAE7F5B00224E06 /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C188991DAE7F5B00224E06 /* SearchBookViewController.swift */; };
+		18C1889E1DAE7F9500224E06 /* SearchBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C1889D1DAE7F9500224E06 /* SearchBookViewController.xib */; };
+		18C188A21DAE879100224E06 /* BasicModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C188A11DAE879100224E06 /* BasicModalViewController.swift */; };
+		18C188A41DAE87A600224E06 /* BasicModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C188A31DAE87A600224E06 /* BasicModalViewController.xib */; };
+		18C188A71DAE9B2100224E06 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C188A51DAE9B2100224E06 /* BookCell.swift */; };
+		18C188A81DAE9B2100224E06 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C188A61DAE9B2100224E06 /* BookCell.xib */; };
+		18C188AA1DAE9DC600224E06 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C188A91DAE9DC600224E06 /* BookViewModel.swift */; };
 		18CF87DE1DABED1300701CAD /* AuthenticateModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF87DD1DABED1300701CAD /* AuthenticateModalViewController.swift */; };
 		18CF87E01DABED3400701CAD /* AuthenticateModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF87DF1DABED3400701CAD /* AuthenticateModalViewController.xib */; };
 		18D617A01DAC14FE000EDA11 /* Confirmable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6179F1DAC14FE000EDA11 /* Confirmable.swift */; };
@@ -73,6 +80,13 @@
 		187921581DABDD6800EDE2B0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		1879215A1DABDD8E00EDE2B0 /* BookContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookContent.swift; path = Models/BookContent.swift; sourceTree = "<group>"; };
 		18B72F581DAC897D000D6E15 /* Modal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Modal.swift; path = Protocols/Modal.swift; sourceTree = "<group>"; };
+		18C188991DAE7F5B00224E06 /* SearchBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBookViewController.swift; path = ViewControllers/SearchBookViewController.swift; sourceTree = "<group>"; };
+		18C1889D1DAE7F9500224E06 /* SearchBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchBookViewController.xib; path = Views/ViewControllers/SearchBookViewController.xib; sourceTree = "<group>"; };
+		18C188A11DAE879100224E06 /* BasicModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicModalViewController.swift; path = Views/ViewControllers/BasicModalViewController.swift; sourceTree = "<group>"; };
+		18C188A31DAE87A600224E06 /* BasicModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BasicModalViewController.xib; path = Views/ViewControllers/BasicModalViewController.xib; sourceTree = "<group>"; };
+		18C188A51DAE9B2100224E06 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookCell.swift; path = Views/BookCell.swift; sourceTree = "<group>"; };
+		18C188A61DAE9B2100224E06 /* BookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookCell.xib; path = Views/BookCell.xib; sourceTree = "<group>"; };
+		18C188A91DAE9DC600224E06 /* BookViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookViewModel.swift; path = ViewModels/BookViewModel.swift; sourceTree = "<group>"; };
 		18CF87DD1DABED1300701CAD /* AuthenticateModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticateModalViewController.swift; path = ViewControllers/AuthenticateModalViewController.swift; sourceTree = "<group>"; };
 		18CF87DF1DABED3400701CAD /* AuthenticateModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuthenticateModalViewController.xib; path = Views/ViewControllers/AuthenticateModalViewController.xib; sourceTree = "<group>"; };
 		18D6179F1DAC14FE000EDA11 /* Confirmable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Confirmable.swift; path = Protocols/Confirmable.swift; sourceTree = "<group>"; };
@@ -185,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				18D6179F1DAC14FE000EDA11 /* Confirmable.swift */,
+				18B72F581DAC897D000D6E15 /* Modal.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -195,6 +210,8 @@
 				18DA4EE31DA8E198002CBB0F /* AddBookViewController.xib */,
 				18DA4EE41DA8E198002CBB0F /* BooksViewController.xib */,
 				18CF87DF1DABED3400701CAD /* AuthenticateModalViewController.xib */,
+				18C1889D1DAE7F9500224E06 /* SearchBookViewController.xib */,
+				18C188A31DAE87A600224E06 /* BasicModalViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -204,6 +221,7 @@
 			children = (
 				18542BB31DA938EB00FC2420 /* BooksViewModel.swift */,
 				187921541DABDD0600EDE2B0 /* UserViewModel.swift */,
+				18C188A91DAE9DC600224E06 /* BookViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -213,6 +231,8 @@
 			children = (
 				18DA4EDC1DA8D9A2002CBB0F /* ViewControllers */,
 				18D617A11DAC166B000EDA11 /* ModalTransition.swift */,
+				18C188A51DAE9B2100224E06 /* BookCell.swift */,
+				18C188A61DAE9B2100224E06 /* BookCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -223,7 +243,8 @@
 				18DA4EE71DA8E1A5002CBB0F /* AddBookViewController.swift */,
 				18DA4EE81DA8E1A5002CBB0F /* BooksViewController.swift */,
 				18CF87DD1DABED1300701CAD /* AuthenticateModalViewController.swift */,
-				18B72F581DAC897D000D6E15 /* Modal.swift */,
+				18C188991DAE7F5B00224E06 /* SearchBookViewController.swift */,
+				18C188A11DAE879100224E06 /* BasicModalViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -409,7 +430,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C188A81DAE9B2100224E06 /* BookCell.xib in Resources */,
 				1857074C1D163D43007AF52B /* LaunchScreen.storyboard in Resources */,
+				18C188A41DAE87A600224E06 /* BasicModalViewController.xib in Resources */,
+				18C1889E1DAE7F9500224E06 /* SearchBookViewController.xib in Resources */,
 				18CF87E01DABED3400701CAD /* AuthenticateModalViewController.xib in Resources */,
 				18DA4EE61DA8E198002CBB0F /* BooksViewController.xib in Resources */,
 				18DA4EE51DA8E198002CBB0F /* AddBookViewController.xib in Resources */,
@@ -576,17 +600,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C188A71DAE9B2100224E06 /* BookCell.swift in Sources */,
 				18D617A21DAC166B000EDA11 /* ModalTransition.swift in Sources */,
 				18D617A01DAC14FE000EDA11 /* Confirmable.swift in Sources */,
 				185707421D163D43007AF52B /* AppDelegate.swift in Sources */,
 				187921551DABDD0600EDE2B0 /* UserViewModel.swift in Sources */,
 				18542BB41DA938EC00FC2420 /* BooksViewModel.swift in Sources */,
+				18C188A21DAE879100224E06 /* BasicModalViewController.swift in Sources */,
 				18DA4EE91DA8E1A5002CBB0F /* AddBookViewController.swift in Sources */,
 				180237B31DAD122B00006BAB /* API.swift in Sources */,
 				1879215B1DABDD8E00EDE2B0 /* BookContent.swift in Sources */,
 				18542BB81DA93B1D00FC2420 /* Book.swift in Sources */,
+				18C1889A1DAE7F5B00224E06 /* SearchBookViewController.swift in Sources */,
 				187921591DABDD6800EDE2B0 /* User.swift in Sources */,
 				187921521DABCB7C00EDE2B0 /* UISearchBar.swift in Sources */,
+				18C188AA1DAE9DC600224E06 /* BookViewModel.swift in Sources */,
 				18DA4EEA1DA8E1A5002CBB0F /* BooksViewController.swift in Sources */,
 				18CF87DE1DABED1300701CAD /* AuthenticateModalViewController.swift in Sources */,
 				18B72F591DAC897D000D6E15 /* Modal.swift in Sources */,
