@@ -9,10 +9,10 @@
 import RealmSwift
 
 class BookContent: Object {
-    dynamic var fileName: String = ""
+    dynamic var level: String = ""
+    dynamic var filePath: String = ""
     dynamic var title: String = ""
-    dynamic var depth: Int = 0
     dynamic var content: String = ""
     dynamic var read: Bool = false
-    dynamic var readProgress: CGPoint = .zero
+    dynamic var readProgress: Float = 0
 }
